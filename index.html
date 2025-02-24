@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets//lists_24dp__008000_FILL0_wght400_GRAD0_opsz24.svg"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Kanban Board</div>
+      <div class="user-avatar">V</div>
+    </header>
+
+    <main >
+      <div class="board">
+        <!-- To Do Column -->
+        <div class="column" id="todo">
+          <div class="column-header">
+            <h3>To Do</h3>
+            <button class="add-card-btn">+</button>
+          </div>
+          <div class="tasks"></div>
+        </div>
+
+        <!-- In Progress Column -->
+        <div class="column" id="in-progress">
+          <div class="column-header">
+            <h3>In Progress</h3>
+            <button class="add-card-btn">+</button>
+          </div>
+          <div class="tasks"></div>
+        </div>
+
+        <!-- Done Column -->
+        <div class="column" id="done">
+          <div class="column-header">
+            <h3>Done</h3>
+            <button class="add-card-btn">+</button>
+          </div>
+          <div class="tasks"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Olorunda Victory</p>
+    </footer>
+
+    <!-- Add Task Modal -->
+    <div class="modal" id="add-task-modal">
+      <div class="modal-content">
+        <h3>Add Task</h3>
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <textarea
+          id="task-description"
+          placeholder="Task Description"
+        ></textarea>
+        <button id="save-task-btn">Save Task</button>
+        <button id="close-modal-btn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
